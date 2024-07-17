@@ -6,6 +6,17 @@
 
 ![Ferramas](https://github.com/user-attachments/assets/8d0d69ec-7da9-4ea2-95d6-6894de1db31e)
 
+![image](https://github.com/user-attachments/assets/16097514-ed3b-4c76-82ce-9a7fdc623391)
+
+
+![image](https://github.com/user-attachments/assets/58b42e8b-bcaf-41d0-a453-1719261006b1)
+
+
+![image](https://github.com/user-attachments/assets/546694ff-2a53-43f3-a095-4a04cf86a695)
+
+
+
+
 ## 🛠 Tecnologías Utilizadas
 
 ### **Lenguajes de Programación**
