@@ -63,3 +63,20 @@
    ```bash
    python -m venv venv
    source venv/bin/activate  # En Windows: venv\Scripts\activate
+
+Instalar Dependencias:
+
+pip install -r requirements.txt
+Configurar Variables de Entorno
+Crea un archivo .env y agrega las variables necesarias, como configuraciones de la base de datos y claves API para servicios como SendGrid.
+
+Inicializar la Base de Datos:
+
+flask db init
+flask db migrate -m "Initial migration."
+flask db upgrade
+Ejecutar la Aplicación
+
+flask run
+Acceder a la Aplicación
+Abre tu navegador y visita http://127.0.0.1:5000 para ver tu aplicación en funcionamiento.
