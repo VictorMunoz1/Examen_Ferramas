@@ -1,7 +1,15 @@
-- 👋 Hi, I’m @VictorMunoz1
+Proyecto Ferramas
+![image](https://github.com/user-attachments/assets/8d0d69ec-7da9-4ea2-95d6-6894de1db31e)
+
 Lenguajes:
-Python: Principal lenguaje utilizado para la lógica del backend.
+Python:Principal lenguaje utilizado para la lógica del backend.
+![image](https://github.com/user-attachments/assets/dd4c0126-71b3-42b1-b604-92f347d5ec3a)
+
 HTML, CSS, JavaScript: Utilizados para el frontend.
+![image](https://github.com/user-attachments/assets/fa732556-56d1-4c19-8975-f06ed651f0e5)  ![image](https://github.com/user-attachments/assets/6ae20131-eeac-4c7b-a807-15970126f3d5)  ![image](https://github.com/user-attachments/assets/dd8cd794-3958-4583-ae7d-5105e57a8d5c)
+
+
+
 Tecnología:
 Flask
 SendGrid
@@ -12,10 +20,7 @@ MVC (Modelo - Vista- Controlador)
 Framework:
 Flask
 Pasos de Implementación:
-Clonar el Repositorio:
 
-git clone https://github.com/tuusuario/tu-repositorio.git
-cd tu-repositorio
 Crear y Activar un Entorno Virtual:
 
 
@@ -39,6 +44,5 @@ Acceder a la Aplicación:
 
 Abre tu navegador y ve a http://127.0.0.1:5000 para ver tu aplicación en funcionamiento.
 <!---
-VictorMunoz1/VictorMunoz1 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
+
 --->
