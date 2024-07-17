@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ferramas</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Home.css') }}">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <p class="logo">Ferramas</p>
+            <ul class="nav-buttons">
+                <li><a href="{{ url_for('materiales') }}">Materiales</a></li>
+                <li><a href="{{ url_for('epp') }}">Equipos de Proteccion personal</a></li>
+                <li><a href="{{ url_for('herramientas') }}">Herramientas Manuales</a></li>
+                <li><a href="{{ url_for('equipos_medicion') }}">Equipos de Medicion</a></li>
+                <li><a href="{{ url_for('tornillos_anclajes') }}">Tornillos y Anclajes</a></li>
+                <li><a href="{{ url_for('fijaciones') }}">Fijaciones</a></li>
+                <li><a href="{{ url_for('api') }}">API</a></li>
+                <li><a href="{{ url_for('login') }}">Iniciar Sesion</a></li>
+                <li><a href="{{ url_for('register') }}">Registrarse</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Los mejores materiales <br>a tu alcance </h1>
+        <button>COMPRA YA! </button>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">Ferramas!</span></h2>
+                <p>Una de las mejores Ferreterias del pais, en la cual puedes encontrar todos los materiales que necesites para tu hogar, taller y trabajo </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">|
+            <h2>Nuestros Servicios</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Herramientas Manuales</h3>
+                    <p>Aqui en Ferramas puedes encontrar todo tipo de herramientas manuales desde Martillos, Combos y Destornilladores hasta herramientas electricas
+                        como Sierras y Taladros </p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Materiales Básicos</h3>
+                    <br>
+                    <p>Quieres realizar una ampliacion? tienes algun proyecto en mente? Aqui en Ferramas contamos con todo tipo de materiales, tales como Cemento,
+                        Ladrillos, Maderas etc. Ven a ver o revisa nuestro catalogo online 
+                    </p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Equipos de Seguridad</h3>
+                    <br>
+                    <p>En Ferramas sabemos que no hay nada mas importante que nuestros clientes y su seguridad por eso nos encargamos de tener los mejores
+                        equipos de seguirad desde Antiparras, guantes , Mascarillas etc. Ven por tu EPP para realizar un trabajo de manera segura
+                    </p>
+                    <button>+ Info</button>
+                </div>  
+            </div>
+        </div>
+    </section>
+    
+    <form action="{{ url_for('suscribirse') }}" method="POST">
+        <h3>Deseas recibir nuestras ultimas noticias y ofertas?, Suscribete a Ferramas y no te pierdas de nada</h3>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Suscribirse</button>
+    </form>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li>✔️ 100% online</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Listo para construir?</h2>
+        <button>COMPRA YA!</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Ferramas</p>
+        </div>
+    </footer>
+    <ul>
+        <li><a href="{{ url_for('materiales') }}">Materiales</a></li>
+
+    </ul>
+
+
+
+
+</body>

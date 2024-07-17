@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Carrito.css') }}">    
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+
+    <form method="POST" action="{{ url_for('actualizar_moneda_carrito') }}">
+        <label for="moneda_destino">Selecciona la moneda:</label>
+        <select id="moneda_destino" name="moneda_destino">
+            <option value="USD">USD</option>
+            <option value="CLP">CLP</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <!-- Añade más opciones de moneda según sea necesario -->
+        </select>
+        <button type="submit">Actualizar Moneda</button>
+    </form>
+
+    {% if carrito %}
+        <ul>
+            {% for item in carrito %}
+                <li>
+                    {{ item['nombre'] }} - {{ item['cantidad'] }} x {{ item['precio'] }} CLP
+                    {% if moneda_destino != 'CLP' %}
+                        ({{ item['precio_convertido'] | round(2) }} {{ moneda_destino }})
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        <p>Total: {{ total_convertido | round(2) }} {{ moneda_destino }}</p>
+        <form method="POST" action="{{ url_for('checkout') }}">
+            <button type="submit">Proceder al Pago</button>
+        </form>
+    {% else %}
+        <p>Tu carrito está vacío.</p>
+    {% endif %}
+
+    <a href="{{ url_for('limpiar_carrito') }}">Limpiar Carrito</a>
+
+
+
+            <!-- Botón flotante -->
+    <button id="boton-flotante">Transferencia</button>
+
+    <!-- Contenedor de datos oculto -->
+    <div id="datos-ocultos" class="datos-ocultos">
+        <h2>Datos de Transferencia</h2>
+        <p>Nombre del banco: Banco Ejemplo</p>
+        <p>Número de cuenta: 123456789</p>
+        <p>Beneficiario: Nombre del Beneficiario</p>
+        <!-- Otros datos de transferencia -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/boton.js') }}"></script>
+
+
+
+</body>
+</html>
