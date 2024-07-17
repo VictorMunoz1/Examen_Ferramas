@@ -15,6 +15,14 @@
 ![image](https://github.com/user-attachments/assets/546694ff-2a53-43f3-a095-4a04cf86a695)
 
 
+![image](https://github.com/user-attachments/assets/b6f8069b-4127-44a7-a256-73835ea48b65)
+
+
+![image](https://github.com/user-attachments/assets/bc606942-1a57-4e89-9b00-541da981f44c)
+
+
+
+
 
 
 ## 🛠 Tecnologías Utilizadas
